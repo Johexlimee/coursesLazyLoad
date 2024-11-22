@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
+  constructor(private consume:FirstServiceService){
 
+  }
 }
