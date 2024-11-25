@@ -1,1 +1,21 @@
-<h1>Lista de cursos</h1>
+<div class="row" *ngIf="data">
+    <div class="column" *ngFor="let item of data">
+        <div class="card">
+            <div class="imagen">
+                <img src="{{item.image}}" alt="" class="img-size">
+            </div>
+            <div class="detalles">
+                <h1>{{item.title}}</h1>
+                <h2>{{item.category}}</h2>
+                <h3>{{item.description}}</h3>
+                <div class="precio">
+                    <h4>$ {{item.price}}</h4>
+                </div>
+                <div>
+                    <h6>Puntuacion: {{item.rating.rate}}</h6>
+                    <h6>Numero de compras: {{item.rating.count}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

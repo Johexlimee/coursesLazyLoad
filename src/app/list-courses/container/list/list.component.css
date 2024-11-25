@@ -1,0 +1,44 @@
+.column {
+    float: left;
+    width: 370px;
+    padding: 20px 10px;
+}
+  
+.card {
+box-shadow: 0 4px 8px 0 #1a1717;
+padding: 16px;
+background-color: #f1f1f1;
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 12px;
+    }
+}
+
+.detalles{
+margin-top: 15px;
+}
+
+.imagen{
+width: 100%;
+height: 250px;
+}
+
+.img-size{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
